@@ -3,21 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Gridverso: crucigramas en español latino, con pistas claras y sin monedas.">
+  <meta name="description" content="Gridverso: un universo en un tablero. Crucigramas en español latino, con pistas claras y sin monedas.">
+  <meta name="theme-color" content="#171735">
+  <meta property="og:title" content="Gridverso — Un universo en un tablero">
+  <meta property="og:description" content="Crucigramas en español latino, con pistas claras y sin monedas.">
+  <meta property="og:image" content="https://gridverso.app/img/portada.webp">
+  <meta property="og:url" content="https://gridverso.app/">
   <title>Gridverso</title>
+  <link rel="icon" href="/img/logo-oscuro.svg" type="image/svg+xml">
+  <link rel="preload" href="/fuentes/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/estilos.css">
 </head>
 <body>
-  <main class="pagina">
-    <h1 class="titulo" aria-label="Gridverso">
-      <span aria-hidden="true">G</span><span aria-hidden="true">R</span><span aria-hidden="true">I</span><span aria-hidden="true">D</span><span aria-hidden="true">V</span><span aria-hidden="true">E</span><span aria-hidden="true">R</span><span aria-hidden="true">S</span><span aria-hidden="true">O</span>
-    </h1>
-    <p class="bajada">Crucigramas en español latino, con pistas claras y sin monedas.</p>
-    <p class="nota">Próximamente en Google Play y App Store. Hecho en México.</p>
+  <header class="portada">
+    <img class="portada__arte" src="/img/portada.webp" width="1672" height="941"
+         alt="Una nave espacial vuela hacia un portal hexagonal que se abre a un tablero de crucigrama bajo una estrella brillante.">
+    <div class="portada__contenido">
+      <div class="portada__texto">
+        <img class="logo" src="/img/logo-oscuro.svg" width="729" height="666" alt="Gridverso">
+        <h1>Un universo en un tablero</h1>
+        <p class="bajada">Crucigramas en español latino, con pistas claras y sin monedas.</p>
+        <ul class="tiendas" aria-label="Disponibilidad">
+          <li class="tienda"><small>Próximamente en</small><strong>Google Play</strong></li>
+          <li class="tienda"><small>Próximamente en</small><strong>App Store</strong></li>
+        </ul>
+        <p class="etiqueta">Hecho en México</p>
+      </div>
+    </div>
+  </header>
 
-    <h2>Contacto</h2>
-    <p>¿Encontraste una pista equivocada o tienes una duda? Escríbenos a
-      <a href="mailto:soporte@gridverso.app">soporte@gridverso.app</a>.</p>
+  <main>
+    <section class="seccion" aria-labelledby="t-rasgos">
+      <p class="etiqueta">Cómo se juega</p>
+      <h2 id="t-rasgos">Un crucigrama nuevo cada vez, a tu ritmo</h2>
+      <ul class="rasgos">
+        <li class="rasgo">
+          <span class="rasgo__casilla" aria-hidden="true">Ñ</span>
+          <h3>Español latino</h3>
+          <p>Pistas escritas como hablamos, con teclado propio que sí trae la Ñ.</p>
+        </li>
+        <li class="rasgo">
+          <span class="rasgo__casilla" aria-hidden="true">3</span>
+          <h3>Tres niveles</h3>
+          <p>Fácil, Medio y Difícil, en seis temas: de deportes y geografía a historia y ciencia.</p>
+        </li>
+        <li class="rasgo">
+          <span class="rasgo__casilla" aria-hidden="true">∞</span>
+          <h3>Sin repetir</h3>
+          <p>La app recuerda las palabras que ya viste y te da otras en la siguiente partida.</p>
+        </li>
+        <li class="rasgo">
+          <span class="rasgo__casilla" aria-hidden="true">0</span>
+          <h3>Sin monedas ni anuncios</h3>
+          <p>No necesitas cuenta ni internet. Tu partida se queda en tu teléfono.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="seccion contacto" aria-labelledby="t-contacto">
+      <div>
+        <p class="etiqueta">Contacto</p>
+        <h2 id="t-contacto">¿Una pista equivocada o una duda?</h2>
+        <p>Escríbenos y la revisamos. Cada reporte ayuda a que el siguiente crucigrama salga mejor.</p>
+      </div>
+      <a class="boton" href="mailto:soporte@gridverso.app">soporte@gridverso.app</a>
+    </section>
   </main>
+
+  <footer class="pie">
+    <span>© 2026 Gridverso</span>
+    <span>Un universo en un tablero</span>
+  </footer>
 </body>
 </html>
