@@ -195,6 +195,15 @@ a:focus-visible { outline: 2px solid var(--chispa); outline-offset: 3px; border-
 .pagina .pie { padding: 20px 0 0; margin-top: 48px; }
 .pendiente { background: var(--chispa); color: var(--tinta); padding: 0 6px; font-weight: 700; }
 
+/* Páginas legales: fondo blanco, texto negro. */
+body.legal { background: #ffffff; color: #000000; }
+body.legal h1, body.legal h2 { color: #000000; }
+body.legal a { color: #1a1a8c; }
+body.legal .nota, body.legal .pie { color: #000000; border-top-color: #cccccc; }
+body.legal .titulo { color: #000000; text-decoration: none; }
+body.legal .pie a { color: #1a1a8c; }
+.legales { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+
 /* ---------- Celular ---------- */
 @media (max-width: 900px) {
   .rasgos { grid-template-columns: repeat(2, 1fr); }
